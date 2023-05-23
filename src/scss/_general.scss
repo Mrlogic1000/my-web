@@ -1,0 +1,83 @@
+.link{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.list-with-icon{
+    @include icon-list;
+}
+
+
+.card-container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    .card {        
+        flex: 1;
+        @include center;
+        flex-direction: column;
+        @include setbackGroundColor($white);
+        box-shadow: $shadow;
+
+        .icon {
+            font-size: 3rem;
+            color: inherit;
+        }
+
+        .card-title {
+            font-weight: bold;
+            font-size: 1.3rem;
+            @include center;
+
+        }
+        &:hover{
+            @include setbackGroundColor($primary);
+        }
+    }
+}
+strong{
+    color: darken($primary , 20%);
+}
+
+.input-container{
+    @include center;  
+    height: 40px;
+    .input-inner-container{
+        display: flex;
+        flex-direction: row; 
+        height: 100%;      
+        width: 100%;
+        
+        input {           
+            width: 80%;
+            outline: none;
+            padding: 1em;
+            border: $border;
+            @include setbackGroundColor(darken($primary, 5%));
+            
+
+        }
+
+        .input-icon {
+            height: 100%;
+            flex: 1;
+            @include center;
+            background-color: transparent;            
+            border: $border;
+            border-left: 0;
+            @include setbackGroundColor(lighten($primary,10%)); 
+            cursor: $cursor;     
+            &:hover{
+                @include setbackGroundColor(lighten($primary,20%));
+            }      
+
+        }
+    }
+}
+
+
+
+
+
+

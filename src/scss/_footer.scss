@@ -1,0 +1,41 @@
+$gap: 10px;
+
+.footer{
+    .quote{
+        display: grid;
+        gap: $gap;
+        button{
+            width: 40%;
+            padding: 1em;
+            border-radius: 20px;
+            @include setbackGroundColor(lighten($primary,10%));
+            cursor: $cursor;
+            &:hover{
+                @include setbackGroundColor(lighten($primary,20%));
+            }
+        }
+    }
+    .footer-info{
+        display: grid;
+        padding: 20px;
+
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        flex-direction: row;
+        @include setbackGroundColor($primary);
+        
+        }
+        .email{
+            display: grid;
+            gap: $gap;
+            .social{
+                display: flex;
+                gap: 20px;
+                width: 60%;
+            }
+        }
+        .address{
+            display: grid;
+            gap: $gap;
+        }
+}

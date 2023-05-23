@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import "colors";
+@import "utilities";
+@import "general";
+@import "page";
+@import "home2";
+@import "footer";
+ul {
+    list-style: none;
+    display: flex;
+}
+
+header {
+
+    background-color: #ddd;
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.60), rgb(0, 0, 0, 0.60)), url("../imgheader.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 150px;
+
+    .content {
+        margin: 100px;
+
+        h1 {
+            color: $white;
+        }
+
+        p {
+            color: $white;
+        }
+    }
+
+    img {
+        @include position(70px, none, 0);
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-evenly;
+        background-color: $whitesmoke;
+
+        z-index: 1;
+
+
+        .logo {
+            display: grid;
+            place-content: center;
+            font-size: 42px;
+            margin-left: 50px;
+            font-weight: 600;
+
+            span {
+                @include center;
+                padding: 10px;
+            }
+
+        }
+
+        ul {
+
+            @include center;
+
+            li {
+                font-weight: bold;
+                margin: 0 1.5em;
+                background-color: $white;
+            }
+        }
+
+        .searchbar {
+            @include center;
+            width: 25%;
+            margin-right: 50px;
+
+            .searchinner {
+                display: flex;
+                flex-direction: row;
+                height: 50%;
+                width: 90%;
+
+                input {
+                    height: 100%;
+                    width: 80%;
+                    outline: none;
+                    padding: 5px;
+                    border:$border;
+
+                }
+
+                span {
+                    height: 100%;
+                    flex: 1;
+                    @include center;
+                    background-color: transparent;
+                    border: $border;
+                    border-left: 0;
+
+                }
+            }
+        }
+
+    }
+
+    .card-container {        
+        width: 80%;
+        height: 250px;
+        @include position(none, 0, 50%);
+        transform: translate(-50%, 50%);
+        
+
+        .card {
+            height: 80%;
+         
+            
+
+            .icon {
+                font-size: 3rem;
+                color: inherit;
+            }
+
+            .card-title {
+                font-weight: bold;
+                font-size: 1.3rem;
+                @include center;
+
+            }
+          
+        }
+    }
+}

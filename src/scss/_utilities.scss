@@ -1,0 +1,51 @@
+@mixin center($align: center) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: $align;
+}
+
+@mixin position($top: none, $bottom: none, $left: none, ) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+}
+
+@mixin borderRadius($height, $width, $radius: 100%) {
+    height: $height;
+    width: $width;
+    border-radius: $radius;
+}
+
+@mixin hover($color: inherit, $backgroundColor: $primary) {
+    color: $color;
+    background-color: $backgroundColor;
+}
+
+@mixin image-fit() {
+    object-position: center;
+    object-fit: cover;
+}
+
+@function set-text-color($bgcolor) {
+    @if(lightness($bgcolor) > 70) {
+        @return #333;
+    }
+
+    @else {
+        @return #fff;
+    }
+
+}
+
+@mixin setbackGroundColor($bgcolor) {
+    background-color: $bgcolor;
+    color: set-text-color($bgcolor);
+
+}
+
+@mixin icon-list($direction:row, $gap:10px){
+    display: flex;
+    flex-direction: $direction;
+}

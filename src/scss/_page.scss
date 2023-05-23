@@ -1,0 +1,40 @@
+.page{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 60px;   
+   .page-image{
+    flex: 50%;
+    img{
+       width: 100%;
+        height: 100%;
+       @include image-fit;
+    
+    }
+   }
+   .page-content{
+    flex:50%;
+    .item{
+        @include center(left);
+        flex-direction: row;
+        margin-bottom: 30px;
+       
+        gap: 20px;
+        .item-icon{             
+            color: $white;
+            .icon{
+            @include center;
+            @include borderRadius(80px,80px);            
+            @include setbackGroundColor($primary);
+            font-size: 3em;
+
+            }
+           
+           
+        }
+        .item-content{
+            padding: 0;
+        }
+    }
+   }
+}
