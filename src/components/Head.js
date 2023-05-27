@@ -1,9 +1,10 @@
 import React from 'react'
-import heade_image from "../imgheader.jpg"
-import {GoSearch} from 'react-icons/go'
+// import heade_image from "../imgheader.jpg"
+
 import {FaLightbulb,FaNetworkWired} from 'react-icons/fa'
 import {GiCctvCamera} from 'react-icons/gi'
 import {RiComputerFill} from 'react-icons/ri'
+import Navbar from './Navbar'
 
 function Head() {
     const cards = [
@@ -16,32 +17,7 @@ function Head() {
   return (
    <header>
     {/* <img src={heade_image} alt="" /> */}
-    <nav>
-        <div className='logo'>
-            <span>TechMogul</span>
-            
-            </div>
-
-    <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Portifolio</li>
-        <li>Contact</li>
-        <li>Gallary</li>
-        
-    </ul>
-
-    <div className='searchbar'>
-
-   <div className="searchinner">
-    
-   <input type="text" />
-   <span><GoSearch/></span>
-   </div>
-
-   </div>
-
-   </nav>
+   <Navbar/>
    <div className='content'>
     
     <h1>The Best IT Technology in the world </h1>
