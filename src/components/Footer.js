@@ -8,7 +8,7 @@ function Footer() {
         <div className='footer'>
             <div className="footer-contact">
                 <h1>Looking for the best IT solution</h1>
-                <h6>As our help we promote the success of your company</h6>
+                <h5>As our help we promote the success of your company</h5>
 
             </div>
             <div className="footer-info">
@@ -46,12 +46,34 @@ function Footer() {
                 <div className='address'>
                     <h1>Official Info</h1>
                     <div className="list-with-icon">
+                    <p>20 Lorem Road Semper, Sydney</p>
+                    </div>
+                    <div className="list-with-icon">
+                    <p>20 Lorem Road Semper, Sydney</p>
                         
                     </div>
                 </div>
                 <div className='gallary'>
                     <h1>Gallary</h1>
+                    {/* <div className="gallary-imgs">
+                    <img className='gallary-img'  src={require(`../images/img10.jpg`)} alt="" />
+                    <img className='gallary-img'  src={require(`../images/img10.jpg`)} alt="" />
+                    <img className='gallary-img'  src={require(`../images/img10.jpg`)} alt="" />
+                    </div> */}
+                    <div className="gallary-imgs">
+                        {
+                          [...Array(7).keys()].map((i,index) => {
+                            if(i!=0){
+
+                               return <img className='gallary-img' key={index}  src={require(`../images/img${i}.jpg`)} alt="" />
+                            }
+                           
+                        })
+                        }
+
+                    </div>
                 </div>
+              
             </div>
         </div>
     )

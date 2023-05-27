@@ -27,18 +27,21 @@ export const items = [
 ]
 
 export const activities = [
-    {title:'Networking', image:'img8.jpg', content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
+    {title:'Networking', image:'img8.jpg', link:"#", content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
     corporis ad dolorum id illo doloribus blanditiis ipsa? Numquam nam
     .`},
-    {title:'Electrical', image:'img2.jpg', content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
+    {title:'Electrical', image:'img2.jpg', link:"#", content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
     corporis ad dolorum id illo doloribus blanditiis ipsa? Numquam nam
    .`},
-    {title:'CCTV', image:'img11.jpg', content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
+    {title:'CCTV', image:'img11.jpg', link:"#", content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
     corporis ad dolorum id illo doloribus blanditiis ipsa? Numquam nam
     .`},
-    {title:'Software', image:'img10.jpg', content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
+    {title:'Software', image:'img10.jpg', link:"#", content:` Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eligendi
     corporis ad dolorum id illo doloribus blanditiis ipsa? Numquam nam
     .`},
 ]
 
+export const gallary = [
+    {title:""}
+]
 

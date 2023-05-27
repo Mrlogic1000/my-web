@@ -43,6 +43,7 @@ function Head() {
 
    </nav>
    <div className='content'>
+    
     <h1>The Best IT Technology in the world </h1>
     <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ut exercitationem quis. <br/>

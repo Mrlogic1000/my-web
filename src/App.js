@@ -3,6 +3,7 @@ import Head from './components/Head';
 import Page from './components/Page';
 import Home2 from './components/Home2';
 import Footer from './components/Footer';
+import Copyright from './components/Copyright';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <Page/>
     <Home2/>
     <Footer/>
+    <Copyright/>
 
     </div>
   );

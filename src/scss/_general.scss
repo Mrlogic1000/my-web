@@ -6,6 +6,34 @@
 .list-with-icon{
     @include icon-list;
 }
+.link{
+    text-decoration: none;
+    color: lighten($primary, 10%);
+    font-weight: bold;
+}
+hr{
+    background-color: $white;
+    border-color: $white;
+    width: 98%;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 2px;
+}
+.note{
+    margin: 50px 0;
+    // background-color: red;
+    text-align: center;
+    span{
+    display: inline-block;
+    margin: auto;   
+    padding: 10px;   
+    border-radius: 20px;
+    color: $primary;
+    font-weight: bold;
+    @include setbackGroundColor($white);
+    box-shadow: $shadow;
+    }
+}
 
 
 .card-container{

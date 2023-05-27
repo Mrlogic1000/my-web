@@ -1,0 +1,10 @@
+.copyright{
+    width: 100%;
+    height: 50px;
+    
+    @include setbackGroundColor($primary);
+    .copyright-text{
+        padding: 5px;
+        @include center;
+    }
+}

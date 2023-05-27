@@ -1,6 +1,17 @@
 $gap: 10px;
 
 .footer{
+    @include setbackGroundColor($primary);
+    margin-top: 50px;
+
+    .footer-contact{
+        h1{
+            padding: 10px 0;
+            text-transform: capitalize;
+        }
+        @include setbackGroundColor(lighten($primary,20%));
+        padding: 50px;
+    }
     .quote{
         display: grid;
         gap: $gap;
@@ -17,9 +28,12 @@ $gap: 10px;
     }
     .footer-info{
         display: grid;
-        padding: 20px;
+        padding: 20px 0;
+        margin: 0 10px;
+        border-bottom: 1px solid $white;
 
         grid-template-columns: repeat(4,1fr);
+       
         gap: 30px;
         flex-direction: row;
         @include setbackGroundColor($primary);
@@ -37,5 +51,20 @@ $gap: 10px;
         .address{
             display: grid;
             gap: $gap;
+        }
+        .gallary{
+            h1{
+            padding-bottom: 20px;
+            }
+            .gallary-imgs{
+                display: grid;
+                gap: 10px;
+                grid-template-columns: repeat(3,1fr);
+                // grid-template-rows: repeat(2,1fr);
+            }
+            .gallary-img{
+                // width: 300px;
+                width: 100%;
+            }
         }
 }
