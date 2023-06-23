@@ -11,8 +11,8 @@ function Head() {
         {icon:<FaLightbulb/>,title:'Electrical'},
         {icon:<FaNetworkWired/>,title:'Networking'},
         {icon:<GiCctvCamera/>,title:'Circuit Close Tevlevison'},
-        {icon:<RiComputerFill/>,title:'Computer Engineering'},
-        {icon:<FaLightbulb/>,title:'Software Installation'},
+        {icon:<RiComputerFill/>, title:'Computer Engineering'},
+        {icon:<FaLightbulb/>, title:'Software Installation'},
     ]
   return (
    <header>

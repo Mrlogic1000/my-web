@@ -1,0 +1,30 @@
+header{
+    .card-container{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        gap:20px;
+        .card {        
+            flex: 1;
+            @include center;
+            flex-direction: column;
+            @include setbackGroundColor($white);
+            box-shadow: $shadow;
+    
+            .icon {
+                font-size: 3rem;
+                color: inherit;
+            }
+    
+            .card-title {
+                font-weight: bold;
+                font-size: 1.3rem;
+                @include center;
+    
+            }
+            &:hover{
+                @include setbackGroundColor($primary);
+            }
+        }
+    }
+}
