@@ -9,7 +9,7 @@ function Home() {
   const loadData = useLoaderData()
   console.log(loadData)
   return (
-    <div>
+    <div className='home'>
       <KeyFeature/>
     <Page/>
     <Services/>
