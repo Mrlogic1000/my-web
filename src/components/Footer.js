@@ -62,12 +62,11 @@ function Footer() {
                     </div> */}
                     <div className="gallary-imgs">
                         {
-                          [...Array(7).keys()].map((i,index) => {
-                            if(i!=0){
-
-                               return <img className='gallary-img' key={index}  src={require(`../images/img${i}.jpg`)} alt="" />
-                            }
+                          [...Array(7).keys()].filter(value=>value>0).map((i,index) => {
                            
+                               return <img className='gallary-img' key={index}  src={require(`../images/img${i}.jpg`)} alt="" />
+                            
+                            // return <img className='gallary-img' key={index}  src={require(`../images/img${i}.jpg`)} alt="" />
                         })
                         }
 

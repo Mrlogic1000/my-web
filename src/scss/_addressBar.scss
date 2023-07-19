@@ -1,0 +1,8 @@
+.addressbar{
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        @include setbackGroundColor(lighten($primary,20%));
+        height: 10vh;
+    }
+}

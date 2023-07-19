@@ -1,5 +1,7 @@
 import {MdComputer,MdElectricalServices} from "react-icons/md"
-import {FaNetworkWired,FaCode} from "react-icons/fa"
+import {FaNetworkWired,FaCode, FaLightbulb} from "react-icons/fa"
+import {GiCctvCamera} from 'react-icons/gi'
+import {RiComputerFill} from 'react-icons/ri'
 
 export const items = [
     { 
@@ -53,6 +55,13 @@ export const services = [
     .`},
 ]
 
+export const cards = [
+    {icon:<FaLightbulb/>,title:'Electrical',  route:'',},
+    {icon:<FaNetworkWired/>,title:'Networking'},
+    {icon:<GiCctvCamera/>,title:'Circuit Close Tevlevison'},
+    {icon:<RiComputerFill/>, title:'Computer Engineering'},
+    {icon:<FaLightbulb/>, title:'Software Installation'},
+]
 export const gallary = [
     {title:""}
 ]
